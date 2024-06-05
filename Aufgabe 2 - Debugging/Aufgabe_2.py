@@ -14,7 +14,7 @@ def divide(a, b):
 
 def main():
     x = 10
-    y = 5
+    y = 0
 
     addition = add(x, y)
     print(f"Addition: {addition}")
@@ -29,7 +29,13 @@ def main():
         division = divide(x, y)
         print(f"Division: {division}")
     except ValueError as e:
-        print(e)
+        print(er) 
+
+    text = "Result: " + 12345
+    print(text)
+
+    my_list = [1, 2, 3]
+    print(my_list[3])
 
 if __name__ == "__main__":
     main()

@@ -15,9 +15,9 @@ def setup_window():
 
 
 def paint(event):
-    x1, y1 = (event.x - 5), (event.y - 5)
-    x2, y2 = (event.x + 5), (event.y + 5)
-    canvas.create_oval(x1, y1, x2, y2, fill=current_color, outline=current_color, width=2)
+    x1, y1 = (event.x - 2), (event.y - 2)
+    x2, y2 = (event.x + 2), (event.y + 2)
+    canvas.create_oval(x1, y1, x2, y2, fill=current_color, outline="black", width=0.01)
 
 
 def change_color(new_color):
@@ -37,7 +37,7 @@ def main():
 
     canvas.bind("<B1-Motion>", paint)
 
-    colors = ["black", "red", "green", "blue", "yellow", "purple", "orange", "brown"]
+    colors = ["black", "red", "yellow", "purple", "orange", "brown"]
     for color in colors:
         btn = tk.Button(
             color_frame, bg=color, width=2, height=1, command=lambda c=color: change_color(c)
