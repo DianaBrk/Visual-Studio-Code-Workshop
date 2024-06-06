@@ -39,6 +39,26 @@ pack(): Platziert das Canvas im Hauptfenster.
 
 Zeichnen auf dem Canvas
 
+Kreise und Ovale:
+
+    canvas.create_oval(x1, y1, x2, y2, fill="red", outline="")
+
+create_oval(): Zeichnet einen Kreis oder eine Ellipse.
+x1, y1, x2, y2: Koordinaten des Begrenzungsrechtecks.
+fill: Füllfarbe der Form.
+outline: Farbe der Umrandung (leerlassen für keine Umrandung).
+
+
+Rechtecke:
+
+    canvas.create_rectangle(x1, y1, x2, y2, fill="green", outline="")
+
+create_rectangle(): Zeichnet ein Rechteck.
+x1, y1, x2, y2: Koordinaten der gegenüberliegenden Ecken.
+fill: Füllfarbe des Rechtecks.
+outline: Farbe der Umrandung (leerlassen für keine Umrandung).
+
+
     def paint(event):
         x1, y1 = (event.x - 1), (event.y - 1)
         x2, y2 = (event.x + 1), (event.y + 1)
