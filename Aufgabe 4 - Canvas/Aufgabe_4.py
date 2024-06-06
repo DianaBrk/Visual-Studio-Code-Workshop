@@ -17,7 +17,7 @@ def setup_window():
 def paint(event):
     x1, y1 = (event.x - 2), (event.y - 2)
     x2, y2 = (event.x + 2), (event.y + 2)
-    canvas.create_oval(x1, y1, x2, y2, fill=current_color, outline="black", width=0.01)
+    canvas.create_oval(x1, y1, x2, y2, fill=current_color, outline=current_color, width=0.01)
 
 
 def change_color(new_color):

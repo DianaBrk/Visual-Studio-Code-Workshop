@@ -29,7 +29,7 @@ def main():
         division = divide(x, y)
         print(f"Division: {division}")
     except ValueError as e:
-        print(er) 
+        print(er)
 
     text = "Result: " + 12345
     print(text)
