@@ -58,6 +58,7 @@ x1, y1, x2, y2: Koordinaten der gegenüberliegenden Ecken.
 fill: Füllfarbe des Rechtecks.
 outline: Farbe der Umrandung (leerlassen für keine Umrandung).
 
+Stärke des Stiftes, der 2. Wert in der Klammer (in diesem Fall die 1):
 
     def paint(event):
         x1, y1 = (event.x - 1), (event.y - 1)
